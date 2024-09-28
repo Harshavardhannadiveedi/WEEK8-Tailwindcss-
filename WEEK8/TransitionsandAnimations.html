@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <title>Tailwind CSS Transitions and Animations Examples</title>
+  <style>
+    .transition-example {
+      transition: all 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Transitions and Animations -->
+  <h1 class="text-3xl font-bold underline">Transitions and Animations Examples</h1>
+
+  <!-- Transition -->
+  <h2 class="text-2xl font-semibold mt-6">Transition</h2>
+  <div class="bg-blue-400 p-4 mb-4 transition-all hover:bg-blue-600">Hover over me to change background color (transition-all)</div>
+  <div class="bg-green-400 p-4 mb-4 transition-opacity hover:opacity-75">Hover over me to change opacity (transition-opacity)</div>
+
+  <!-- Duration -->
+  <h2 class="text-2xl font-semibold mt-6">Duration</h2>
+  <div class="bg-yellow-400 p-4 mb-4 transition duration-75 hover:scale-110">Hover over me to scale up (duration-75)</div>
+  <div class="bg-red-400 p-4 mb-4 transition duration-150 hover:rotate-90"> Hover over me to rotate (duration-150)</div>
+  <div class="bg-purple-400 p-4 mb-4 transition duration-300 hover:scale-50">Hover over me to scale down (duration-300)</div>
+
+  <!-- Transform -->
+  <h2 class="text-2xl font-semibold mt-6">Transform</h2>
+  <div class="bg-gray-400 p-4 mb-4 transform hover:scale-100 scale-50">Hover to scale up from half size</div>
+  <div class="bg-gray-600 p-4 mb-4 transform hover:rotate-90 rotate-0">Hover to rotate 90 degrees </div>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <title>Avengers Photo Gallery</title>
+  <style>
+    .gallery-image {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery-image:hover {
+      transform: scale(1.05); 
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .caption {
+      text-align: center;
+      margin-top: 0.5rem;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 p-6">
+
+  <h1 class="text-5xl font-bold text-center mb-10 text-red-600">Avengers Photo Gallery</h1> <!-- Changed title color to red -->
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+    <!-- Image 1 -->
+    <div class="overflow-hidden rounded-lg shadow-lg">
+      <img src="https://wallpapers.com/images/high/1920-x-1080-avengers-ooadfws9jwzlhjmn.webp" alt="Captain America" class="gallery-image w-full h-auto rounded-lg">
+      <div class="caption">Captain America</div>
+    </div>
+    
+    <!-- Image 2 -->
+    <div class="overflow-hidden rounded-lg shadow-lg">
+      <img src="https://wallpapers.com/images/high/king-t-challa-black-panther-4k-ultra-hd-dark-ovvdyzi5ud9hwal4.webp" alt="Black Panther" class="gallery-image w-full h-auto rounded-lg">
+      <div class="caption">Black Panther</div>
+    </div>
+
+    <!-- Image 3 -->
+    <div class="overflow-hidden rounded-lg shadow-lg">
+      <img src="https://wallpapers.com/images/high/wanda-avenger-hero-4k-zebs9cgwqet9wbsg.webp" alt="Wanda" class="gallery-image w-full h-auto rounded-lg">
+      <div class="caption">Wanda</div>
+    </div>
+
+    <!-- Image 4 -->
+    <div class="overflow-hidden rounded-lg shadow-lg">
+      <img src="https://wallpapers.com/images/high/spider-man-stance-1080p-gaming-l868kxahznb3ym1x.webp" alt="Spider-Man" class="gallery-image w-full h-auto rounded-lg">
+      <div class="caption">Spider-Man</div>
+    </div>
+
+    <!-- Image 5 -->
+    <div class="overflow-hidden rounded-lg shadow-lg">
+      <img src="https://wallpapers.com/images/high/iron-man-mark-85-tony-stark-fg1buyvqoutypm63.webp" alt="Iron Man" class="gallery-image w-full h-auto rounded-lg">
+      <div class="caption">Iron Man</div>
+    </div>
+
+    <!-- Image 6 -->
+    <div class="overflow-hidden rounded-lg shadow-lg">
+      <img src="https://wallpapers.com/images/high/thor-superhero-movie-character-gl0sidsx6anaqu6k.webp" alt="Thor" class="gallery-image w-full h-auto rounded-lg">
+      <div class="caption">Thor</div>
+    </div>
+
+    <!-- Image 7 -->
+    <div class="overflow-hidden rounded-lg shadow-lg">
+      <img src="https://wallpapers.com/images/high/4k-hulk-doing-destruction-tq87fp6e1rofubtt.webp" alt="Hulk" class="gallery-image w-full h-auto rounded-lg">
+      <div class="caption">Hulk</div>
+    </div>
+
+    <!-- Image 8 -->
+    <div class="overflow-hidden rounded-lg shadow-lg">
+      <img src="https://wallpapers.com/images/high/black-widow-glowing-bodysuit-s7g71v1k7y1epy10.webp" alt="Black Widow" class="gallery-image w-full h-auto rounded-lg">
+      <div class="caption">Black Widow</div>
+    </div>
+  </div>
+
+</body>
+</html>

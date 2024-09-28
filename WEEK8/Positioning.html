@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <title>Tailwind CSS Positioning Examples</title>
+  <style>
+    .container {
+      height: 200px;
+      position: relative;
+      background-color: #f8fafc; /* Tailwind's gray-100 */
+      border: 2px dashed #e5e7eb; /* Tailwind's gray-300 */
+      margin-bottom: 20px;
+    }
+    .absolute {
+      position: absolute;
+      background-color: #d1fae5; /* Tailwind's green-200 */
+      padding: 10px;
+    }
+    .fixed {
+      position: fixed;
+      background-color: #fca5a1; /* Tailwind's red-300 */
+      padding: 10px;
+      z-index: 20;
+    }
+    .sticky {
+      position: sticky;
+      top: 0;
+      background-color: #dbeafe; /* Tailwind's blue-200 */
+      padding: 10px;
+      z-index: 10;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Positioning -->
+  <h1 class="text-3xl font-bold underline">
+    Positioning Examples
+  </h1>
+
+  <div class="container">
+    <h2 class="text-lg font-semibold">Relative Position</h2>
+    <div class="absolute top-0 right-0">
+      Absolute positioned element (top-right)
+    </div>
+  </div>
+
+  <div class="container">
+    <h2 class="text-lg font-semibold">Fixed Position</h2>
+    <div class="fixed top-10 left-10">
+      Fixed positioned element (top-left)
+    </div>
+    <p class="mt-24">Scroll down to see the fixed element stay in place.</p>
+  </div>
+
+  <div class="container">
+    <h2 class="text-lg font-semibold">Sticky Position</h2>
+    <div class="sticky">
+      Sticky positioned element
+    </div>
+    <p class="mt-24">Scroll down to see the sticky element in action.</p>
+    <p class="mt-24">Keep scrolling...</p>
+    <p class="mt-24">Keep scrolling...</p>
+    <p class="mt-24">Keep scrolling...</p>
+    <p class="mt-24">Keep scrolling...</p>
+  </div>
+
+  <!-- Z-Index -->
+  <h1 class="text-3xl font-bold underline">
+    Z-Index Examples
+  </h1>
+
+  <div class="relative container mb-4">
+    <div class="absolute top-0 left-0 z-10 bg-yellow-300 p-2">Z-Index 10 </div>
+    <div class="absolute top-0 left-5 z-20 bg-green-300 p-2">Z-Index 20</div>
+    <div class="absolute top-0 left-10 z-30 bg-red-300 p-2">Z-Index 30</div>
+  </div>
+
+</body>
+</html>
